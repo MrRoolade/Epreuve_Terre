@@ -7,12 +7,11 @@ Alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "o"
 Nbre_Lettre = len(Alphabet)
 import sys
 
-# passe l'argument saisi en minuscule
-if len(sys.argv) == 1 : #si l'argument est absent
-	print ("veuillez saisir une Lettre de l'alphabet")
-	
+#si l'argument est absent
+if len(sys.argv) == 1 : 	print ("veuillez saisir une Lettre de l'alphabet")
+
 else:
-	Saisie = sys.argv[1].lower()
+	Saisie = sys.argv[1].lower()# passe l'argument saisi en minuscule
 
 	# Test 
 	if len(sys.argv)>= 3 : #si il n'y a pas trop d'arguments
