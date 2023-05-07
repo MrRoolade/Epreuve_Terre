@@ -31,7 +31,7 @@ except ValueError : #si l'argument autre chose qu'un integer
 except IndexError : #si l'argument est absent
 	print(Bad_Answer)
 
-except ZeroDivisionError : # si le dividande est 0
+except ZeroDivisionError : # si le dividende est 0
 	print(Bad_Answer)
 
 #FIN
