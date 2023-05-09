@@ -7,13 +7,13 @@ Bad_Answer = "Erreur"
 
 try :	
 	# Variables
-	Saisie = sys.argv[1]
+	Saisie = sys.argv[1] #conversion en string
 	nbre_car = int(len(Saisie)) #Recuperation de la longueur du string + transforme en integer
 	Saisie = list(Saisie) #conversion de la chaine de caractère en list
 
 	# Test
 	if len(sys.argv)>= 3 : #si il n'y a pas trop d'arguments
-		print(Bad_Answer+'_a')
+		print(Bad_Answer)
 
 	else :
 		for i in range(nbre_car-1,-1,-1): # boucle à partir du dernier index de la list
@@ -21,6 +21,6 @@ try :
 		print("")
 
 except IndexError : #si l'argument est absent
-	print(Bad_Answer+'_e')
+	print(Bad_Answer)
 
 #FIN
