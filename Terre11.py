@@ -52,6 +52,6 @@ except ValueError as e:
 
 
 #AFFICHAGE DU RESULTAT
-print (f'{convert_hour(hh)}:{mm}{display_AM_PM()}')
+print (f'{convert_hour(hh)}:{mm:02d}{display_AM_PM()}')
 
 #FIN
